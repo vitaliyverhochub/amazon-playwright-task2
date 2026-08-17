@@ -5,3 +5,5 @@ blob-report/
 .DS_Store
 .env
 *.log
+
+.idea/
