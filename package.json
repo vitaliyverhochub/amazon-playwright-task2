@@ -1,0 +1,24 @@
+{
+  "name": "amazon-playwright-assignment",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript automation assignment for Amazon product search and cart validation.",
+  "scripts": {
+    "test": "playwright test tests/product-search.spec.ts",
+    "test:headed": "playwright test tests/product-search.spec.ts --headed",
+    "test:all": "playwright test tests/product-search.spec.ts tests/cart.spec.ts",
+    "test:optional": "playwright test tests/cart.spec.ts",
+    "test:unit": "playwright test tests/parsers.spec.ts",
+    "test:ui": "playwright test --ui",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1",
+    "typescript": "^5.9.2",
+    "@types/node": "26.2.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
